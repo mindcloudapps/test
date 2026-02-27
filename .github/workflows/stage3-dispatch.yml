@@ -1,0 +1,14 @@
+name: Stage3 Dispatch Harness
+on:
+  workflow_dispatch:
+    inputs:
+      note:
+        description: Optional note
+        required: false
+        type: string
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo "stage3 dispatch harness"
